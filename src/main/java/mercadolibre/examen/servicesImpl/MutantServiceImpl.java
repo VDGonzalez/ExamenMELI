@@ -49,7 +49,7 @@ public class MutantServiceImpl implements MutantService {
         // Si NO se encuentra un ADN igual en la base de datos, entonces realizamos las iteraciones:
 
         // Buscamos si es mutante o no:
-        boolean value = searchInDNA_AllDireccitons(dna);
+        boolean value = searchInDNA_AllDirections(dna);
 
         // Persistimos:
         Dna dnaEntity = new Dna(dna, value);
@@ -80,7 +80,7 @@ public class MutantServiceImpl implements MutantService {
         }
     }
 
-    private boolean searchInDNA_AllDireccitons(String[] dna){
+    private boolean searchInDNA_AllDirections(String[] dna){
 
         int count = 0;
 
